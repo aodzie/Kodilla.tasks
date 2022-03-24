@@ -21,7 +21,7 @@ public class TaskController {
     private final DbService service;
     private final TaskMapper taskMapper;
 
-    @GetMapping
+    @GetMapping(value = "getTasks")
     public ResponseEntity<List<TaskDto>> getTasks() {
         List<Task> tasks = service.getAllTasks();
         return ResponseEntity.ok(taskMapper.mapToTaskDtoList(tasks));
@@ -37,7 +37,7 @@ public class TaskController {
         return ResponseEntity.ok().build();
     }
 
-    @PutMapping
+    @PutMapping(value = "createTask")
     public ResponseEntity<TaskDto> updateTask(@RequestBody TaskDto taskDto) {
         Task task = taskMapper.mapToTask(taskDto);
         Task savedTask = service.saveTask(task);
