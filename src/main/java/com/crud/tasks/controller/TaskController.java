@@ -13,7 +13,7 @@ import org.springframework.web.servlet.function.EntityResponse;
 import java.util.List;
 
 @RestController
-@RequestMapping("/v1/tasks")
+@RequestMapping("/v1/task")
 @RequiredArgsConstructor
 @CrossOrigin(origins = "*")
 public class TaskController {
