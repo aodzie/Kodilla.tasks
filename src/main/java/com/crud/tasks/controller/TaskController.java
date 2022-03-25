@@ -35,7 +35,7 @@ public class TaskController {
     public ResponseEntity<Void> deleteTask(@PathVariable Long taskId){
         return ResponseEntity.ok().build();
     }
-    @PutMapping
+    @PutMapping(value="/createTask")
     public ResponseEntity<TaskDto> updateTask(@RequestBody TaskDto taskDto) {
         Task task = taskMapper.mapToTask(taskDto);
         Task savedTask = service.saveTask(task);
