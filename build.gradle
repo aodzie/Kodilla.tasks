@@ -44,7 +44,7 @@ dependencies {
 //implementation 'org.testng:testng:7.1.0'
 //	providedRuntime ('org.springframework.boot:spring-boot-starter-tomcat')
 	//implementation 'org.junit.jupiter:junit-jupiter:5.8.1'
-	//implementation group: 'org.postgresql', name: 'postgresql', version: '42.3.3'
+	implementation group: 'org.postgresql', name: 'postgresql', version: '42.3.3'
 
 
 }
