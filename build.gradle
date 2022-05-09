@@ -39,6 +39,7 @@ dependencies {
 	implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '3.0.0'
 	implementation group: 'io.springfox', name: 'springfox-boot-starter', version: '3.0.0'
 
+	testImplementation 'com.google.code.gson:gson' //do konwersji JSON-a na obiekt oraz obiektu na JSON-a
 
 
 //implementation 'org.testng:testng:7.1.0'
