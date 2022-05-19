@@ -54,6 +54,7 @@ dependencies {
 //	providedRuntime ('org.springframework.boot:spring-boot-starter-tomcat')
 	//implementation 'org.junit.jupiter:junit-jupiter:5.8.1'
 	implementation group: 'org.postgresql', name: 'postgresql', version: '42.3.3'
+	implementation('org.springframework.boot:spring-boot-starter-thymeleaf')
 }
 
 tasks.named('test') {
